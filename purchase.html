@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #111;
+      color: white;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 50px;
+    }
+
+    /* Popup */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup-content {
+      background: #222;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .option {
+      display: block;
+      margin: 15px 0;
+      padding: 10px;
+      background: #444;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .option:hover {
+      background: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Purchase💸</h1>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h2>Choose purchase method</h2>
+
+      <a href="https://discord.com/channels/1493576184943087689/1493582097175154769" class="option">Server Boost</a>
+      <a href="purchaserobux.html" class="option">Robux</a>
+      <a href="https://discord.com/link3" class="option">Method 3</a>
+
+      <br>
+    </div>
+  </div>
+
+  <script>
+    function openPopup() {
+      document.getElementById("popup").style.display = "flex";
+    }
+
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+
+    // 🔥 otevře popup hned po načtení stránky
+    window.onload = openPopup;
+  </script>
+
+</body>
+</html>
